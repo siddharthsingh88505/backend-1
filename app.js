@@ -28,7 +28,7 @@ app.use("/", router);
 app.set("view engine", "ejs");
 
 // connecting database
-connectDb(process.env.DATABASE_URL);
+connectDb("mongodb+srv://siddharthsingh88505:1234@cluster0.1vdh0uk.mongodb.net/?retryWrites=true&w=majority");
 
 // listen to browser port
 app.listen(process.env.PORT, () => {
